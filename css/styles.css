@@ -1,0 +1,80 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+
+	body {
+	font-family:'MyWebFont' ;
+	color:#fff;
+	background-color:#222227;
+	text-align:center;
+	line-height:40px;
+	letter-spacing:0.16em;
+	}
+.wrapper{
+margin:5% 10% 5% 10%;
+border:15px solid red;
+border-radius:20px;
+}
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('../fonts/EraserRegular.eot');
+	src: url('../fonts/EraserRegular.eot?iefix') format('eot'),
+	     url('../fonts/EraserRegular.woff') format('woff'),
+	     url('../fonts/EraserRegular.ttf') format('truetype'),
+	     url('../fonts/EraserRegular.svg#webfont') format('svg');
+}
+
+#panel, #flip,#panel1, #flip1,#pane2, #flip2{
+padding:5px 0 5px 0;
+height:auto;
+}
+#flip, #flip1, #flip2{
+width:150px;
+margin:0 auto;
+
+border-radius:15px;
+cursor:pointer;
+}
+
+#panel,#panel1, #panel2{
+padding:0px;
+display:none;
+}
+a{
+color:#fff;
+}
+a:hover{
+color:red;
+}
+.strokeme{
+color:white;
+text-shadow:
+-1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+
+.wrapper{
+margin:5% 5% 5% 5%;
+border:7px solid red;
+border-radius:20px;
+}
+		
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+}

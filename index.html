@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Digital Homework Journal - AssistID</title>
+	<meta name="description" content="AssistID provides a system for schools focusing on the individual accessibility settings for pupils/
+	with a teachers software package and a responsively designed digital homework journal" />
+	<meta name="keywords" content="AssistID pupils integrated digital homework journal notebook" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- we have used the 1140 grid for responsive design_->
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	<!-- favicon used to have a sense of connection to main website -->
+	<link rel="icon" href="favicon.ico" type="image/ico" />
+	<!-- for sliding toogle -->
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+	<!-- script for the slide toggle on the headings, one for each panel else they all show at once-->
+	<script> 
+		$(document).ready(function(){
+		  $("#flip").click(function(){
+			$("#panel").slideToggle("slow");
+		  });
+		});
+	</script>
+	
+	<script> 
+		$(document).ready(function(){
+		  $("#flip1").click(function(){
+			$("#panel1").slideToggle("slow");
+		  });
+		});
+	</script>
+
+	<script> 
+		$(document).ready(function(){
+		  $("#flip2").click(function(){
+			$("#panel2").slideToggle("slow");
+		  });
+		});
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="container">
+		<div class="row">	
+			<div class="twelvecol last">
+				<br />
+				<h1>My School</h1>
+				<h2>Digital Homework Journal</h2>
+				<h3>
+				<!-- javascript for getting and display of current date, without the time -->
+				<script>
+					var today = new Date();
+					var dd = today.getDate();
+					var mm = today.getMonth()+1; //January is 0!
+
+					var yyyy = today.getFullYear();
+					if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} today = dd+'-'+mm+'-'+yyyy;
+					document.write(today);
+				</script>
+				</h3>
+			</div>
+		</div>
+	</div>
+<br />
+<!-- homework section -->
+	<div class="container">
+		<div class="row">
+			
+			<div class="twelvecol last">
+				
+				<div id="flip" class="strokeme">HOMEWORK</div>
+				<div id="panel">
+					<p>MATHS - Q1, PAGE 12, JUNIOR CERT MATHS
+					</p>
+					<p>HISTORY - REVISE CHAPTER 2
+					</p>
+					<p>GEOGRAPHY - BRING IN MAP FOR THURSDAY
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<br />
+<!-- noticeboard section -->
+	<div class="container">
+		<div class="row">
+			<div class="twelvecol last">
+				<div id="flip1" class="strokeme">NOTICEBOARD</div>
+				<div id="panel1">
+					<p>	SPORTS DAY - MAY 25TH</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<br />
+<!-- projects section -->
+	<div class="container">
+		<div class="row">
+			<div class="twelvecol last">
+				<div id="flip2" class="strokeme" >PROJECTS</div>
+				<div id="panel2">
+					<p>HISTORY PROJECT TO BE HANDED UP DEC 15TH</p>
+					<br />
+					<a href="http://www.bbc.co.uk/history/0/" title="link to BBC history website">USEFUL HISTORY LINK</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<br />
+	<div class="container">
+		<div class="row">
+			<div class="twelvecol last">
+				<div class="footer">
+					<a href="mailto:ethornbury@eircom.net">email the teacher
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
